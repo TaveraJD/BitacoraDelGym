@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".RepetitionMaximumActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/titleRM"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <!--Sección 1. Grupos musculares-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/musclegroup"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner_mg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="5dp"
+        android:background="@drawable/custom_ic_spinner" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <!--Sección 2. Ejercicios-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exercisename"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner_e"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="5dp"
+        android:background="@drawable/custom_ic_spinner" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <!--Sección 3. Peso, Series y Repeticiones en DB-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dbrecord"
+        android:textSize="15sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_dbWeight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:hint="@string/kgs"
+            android:textColorHint="@color/hint"
+            android:textAlignment="center"
+            android:enabled="false"
+            android:background="@drawable/custom_edittext_d" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kg"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <!--Sección 4. Peso, Series y Repeticiones nuevos-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nwrecord"
+        android:textSize="15sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_nwWeight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:paddingHorizontal="5dp"
+            android:hint="@string/kgs"
+            android:textColorHint="@color/hint"
+            android:textColor="@color/main"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textAlignment="center"
+            android:background="@drawable/custom_edittext_e" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kg"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <!--Botón de guardar marca-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textSize="18sp"
+        android:backgroundTint="@color/main"
+        android:onClick="saveRM" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <!--Botón de cambio a PR-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seePR"
+        android:textSize="17sp"
+        android:backgroundTint="@color/main"
+        android:onClick="seePR" />
+
+</LinearLayout>

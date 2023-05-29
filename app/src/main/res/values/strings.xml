@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bitácora del Gym</string>
+
+    <!--Títulos de las activities-->
+    <string name="titlePR">Mis marcas personales (PR)</string>
+    <string name="titleRM">Mis marcas máximas (RM)</string>
+
+    <!--Títulos de las secciones-->
+    <string name="musclegroup">Grupo muscular:</string>
+    <string name="exercisename">Ejercicio:</string>
+    <!--PR-->
+    <string name="dbrecords">Marcas actuales</string>
+    <string name="nwrecords">Nuevas marcas</string>
+    <!--RM-->
+    <string name="dbrecord">Marca actual</string>
+    <string name="nwrecord">Nueva marca</string>
+
+    <!--Texto de los edit texts-->
+    <string name="kgs">peso</string>
+    <string name="set">sets</string>
+    <string name="rep">reps</string>
+
+    <!--Texto de los botones-->
+    <string name="save">Guardar</string>
+    <string name="seeRM">Ver mis RM</string>
+    <string name="seePR">Ver mis PR</string>
+
+</resources>
